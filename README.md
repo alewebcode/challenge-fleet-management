@@ -115,7 +115,31 @@ docker compose exec api npm run seed:users
 
 Isso cria o usuário administrador padrão para acesso inicial à API.
 
+- login : aivacol
+- senha : aivacol@123
+
 ---
+
+## Endpoints da API
+
+| Método   | Rota               | Auth    | Descrição                       |
+| -------- | ------------------ | ------- | ------------------------------- |
+| `POST`   | `/auth/login`      | Público | Autenticação, retorna token JWT |
+| `POST`   | `/brands/create`   | JWT     | Criar marca                     |
+| `GET`    | `/brands`          | JWT     | Listar marcas                   |
+| `GET`    | `/brands/:id`      | JWT     | Buscar marca por ID             |
+| `PUT`    | `/brands/:id`      | JWT     | Atualizar marca                 |
+| `DELETE` | `/brands/:id`      | JWT     | Remover marca                   |
+| `POST`   | `/models/create`   | JWT     | Criar modelo                    |
+| `GET`    | `/models`          | JWT     | Listar modelos                  |
+| `GET`    | `/models/:id`      | JWT     | Buscar modelo por ID            |
+| `PUT`    | `/models/:id`      | JWT     | Atualizar modelo                |
+| `DELETE` | `/models/:id`      | JWT     | Remover modelo                  |
+| `POST`   | `/vehicles/create` | JWT     | Criar veículo                   |
+| `GET`    | `/vehicles`        | JWT     | Listar veículos                 |
+| `GET`    | `/vehicles/:id`    | JWT     | Buscar veículo por ID           |
+| `PUT`    | `/vehicles/:id`    | JWT     | Atualizar veículo               |
+| `DELETE` | `/vehicles/:id`    | JWT     | Remover veículo                 |
 
 ## Como Testar
 
