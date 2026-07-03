@@ -74,11 +74,11 @@ services:
     env_file:
       - .env
     environment:
-      DB_HOST: sqlserver
-      REDIS_HOST: redis
-      MONGO_HOST: mongodb
-      MONGO_URI: "mongodb://${MONGO_USERNAME}:${MONGO_PASSWORD}@mongodb:27017/${MONGO_DATABASE}?authSource=admin"
-      RABBITMQ_HOST: rabbitmq
+      DB_HOST: ${DB_HOST}
+      REDIS_HOST: ${REDIS_HOST}
+      MONGO_HOST: ${MONGO_HOST}
+      MONGO_URI: "mongodb://${MONGO_USERNAME}:${MONGO_PASSWORD}@${MONGO_HOST}:${MONGO_PORT}/${MONGO_DATABASE}?authSource=admin"
+      RABBITMQ_HOST: ${RABBITMQ_HOST}
     volumes:
       - ./src:/app/src
     depends_on:

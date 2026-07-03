@@ -104,13 +104,13 @@ docker compose up -d
 ### 4. Executar as migrations
 
 ```bash
-npm run migration:run
+docker compose exec api npm run migration:run
 ```
 
 ### 5. Executar o seed de usuário
 
 ```bash
-npm run seed:users
+docker compose exec api npm run seed:users
 ```
 
 Isso cria o usuário administrador padrão para acesso inicial à API.
