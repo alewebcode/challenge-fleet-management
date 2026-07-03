@@ -8,18 +8,16 @@ Desenvolvida com arquitetura hexagonal (ports & adapters), separando claramente 
 
 ## Tecnologias Utilizadas
 
-| Tecnologia
-|---|---|
-| **Node.js 22**
-| **NestJS 11**
-| **TypeScript 5.7**
-| **SQL Server** (TypeORM)
-| **MongoDB** (Mongoose)
-| **Redis**
-| **RabbitMQ** (amqplib)
-| **JWT + Passport**
-| **Jest**
-| **Docker**
+- **Node.js 22**
+- **NestJS 11**
+- **TypeScript 5.7**
+- **SQL Server** (TypeORM)
+- **MongoDB** (Mongoose)
+- **Redis**
+- **RabbitMQ** (amqplib)
+- **JWT + Passport**
+- **Jest**
+- **Docker**
 
 ---
 
